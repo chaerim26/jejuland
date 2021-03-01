@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>탐라는 제주랜드 회원가입페이지</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/join_master.css">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="js/jquery.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery.mobile.custom.min.js"></script>
+		<script src="js/swipe.js"></script>
+		<script>
+		$(document).ready(function(){
+				$(".m_nav").click(function(){
+					$(".m_slidemenu").slideToggle();
+					$(".m_nav").hide();
+					$(".m_smart").hide();
+				});
+				$(".right_icon").click(function(){
+					$(".m_slidemenu").slideUp();
+					$(".m_nav").show();
+					$(".m_smart").show();
+				});
+
+				$(".sub1").click(function(){
+					$(".m_sub1").slideToggle();
+				});
+				$(".sub2").click(function(){
+					$(".m_sub2").slideToggle();
+				});
+				$(".sub3").click(function(){
+					$(".m_sub3").slideToggle();
+				});
+				$(".sub4").click(function(){
+					$(".m_sub4").slideToggle();
+				});
+				$(".sub5").click(function(){
+					$(".m_sub5").slideToggle();
+				});
+				//(모바일)nav slidetoggle end
+			});
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<div class="m_slidemenu">
+				<div class="m_header">
+					<a href="login.html" class="left_icon"><img src="images/m_login.png" width="18" height="18" alt="모바일로그인아이콘"></a>
+					<p class="m_login">로그인</p>
+					<a href="#" class="right_icon"><img src="images/m_close.png" width="18" height="18" alt="모바일닫기아이콘"></a>
+				</div>
+				<ul class="m_loginlist">
+					<li><a href="join.html">회원가입</a></li>
+					<li><a href="#">단체프로그램</a></li>
+					<li><a href="attraction.html">온라인예매</a></li>
+				</ul>
+					
+				<nav id="m_menu">
+					<ul>
+						<li class="m1 sub1">
+							<a href="#" class="mm">이용정보</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub1">
+								<li class="m_firstsub"><a href="#">이용안내</a></li>
+								<li><a href="#">운영시간</a></li>
+								<li class="m_lastsub"><a href="#">오시는길</a></li>
+							</ul>
+						</li>
+						<li class="m1 sub2">
+							<a href="#" class="mm">요금정보</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub2">
+								<li class="m_firstsub"><a href="#">이용요금</a></li>
+								<li><a href="#">이달의 혜택</a></li>
+								<li class="m_lastsub"><a href="#">제휴카드</a></li>
+							</ul>
+						</li>
+						<li class="m1 sub3">
+							<a href="#" class="mm">즐길거리</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub3">
+								<li class="m_firstsub"><a href="#">추천코스</a></li>
+								<li><a href="attraction.html">어트랙션</a></li>
+								<li class="m_lastsub"><a href="#">레스토랑</a></li>
+							</ul>
+						</li>
+						<li class="m1 sub4">
+							<a href="#" class="mm">이벤트</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub4">
+								<li class="m_firstsub"><a href="#">참여 이벤트</a></li>
+								<li class="m_lastsub"><a href="#">체험 프로그램</a></li>
+							</ul>
+						</li> 
+						<li class="m1 sub5">
+							<a href="#"  class="mm">고객센터</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub5">
+								<li class="m_firstsub"><a href="#">공지사항</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">고객 소리함</a></li>
+								<li class="m_lastsub"><a href="#">분실물 센터</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<h1>
+				<a href="main.html"><img src="images/logo.PNG" alt="탐라는제주랜드 로고"></a>
+			</h1>
+			<a href="#" class="m_nav"><img src="images/m_nav.png" alt="모바일 네비"></a>
+			<a href="ticketing.html" class="m_smart"><img src="images/m_smart.png" alt="모바일 스마트예약"></a>
+			<ul class="login">
+				<li><a href="login.html">로그인</a></li>
+				<li><a href="join.html">회원가입</a></li>
+				<li><a href="#">KOR▼</a></li>
+			</ul>
+			<ul class="sub">
+				<li>
+					<a href="#"><img src="images/search.png" width="21" height="21" alt="검색"></a>
+					<ul>
+						<li>검색</li>
+					</ul>
+				</li>
+				<li>
+					<a href="ticketing.html"><img src="images/ticket.png" height="21" alt="예매"></a>
+					<ul>
+						<li>예매</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><img src="images/people.png" height="21" alt="단체"></a>
+					<ul>
+						<li>단체</li> 
+					</ul>
+				</li>
+			</ul>
+			<nav id="menu">
+				<ul>
+					<li class="m1">
+						<a href="#" class="mm">이용정보</a>
+						<ul>
+							<li><a href="#">이용안내</a></li>
+							<li><a href="#">운영시간</a></li>
+							<li><a href="#">오시는길</a></li>
+						</ul>
+					</li>
+					<li class="m1">
+						<a href="#" class="mm">요금정보</a>
+						<ul>
+							<li><a href="#">이용요금</a></li>
+							<li><a href="#">이달의 혜택</a></li>
+							<li><a href="#">제휴카드</a></li>
+						</ul>
+					</li>
+					<li class="m1">
+						<a href="#" class="mm">즐길거리</a>
+						<ul>
+							<li><a href="#">추천코스</a></li>
+							<li><a href="attraction.html">어트랙션</a></li>
+							<li><a href="#">레스토랑</a></li>
+						</ul>
+					</li>
+					<li class="m1">
+						<a href="#" class="mm">이벤트</a>
+						<ul>
+							<li><a href="#">참여 이벤트</a></li>
+							<li><a href="#">체험 프로그램</a></li>
+						</ul>
+					</li> 
+					<li class="m1">
+						<a href="#"  class="mm">고객센터</a>
+						<ul>
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">고객 소리함</a></li>
+							<li><a href="#">분실물 센터</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!--header end-->
+
+		<section id="join_content">
+			<h2><img src="images/join_image.png" alt="해녀그림"></h2>
+			<p>회원가입</p>
+			<div id="joinsection">
+				<form method="post" id="joinform">
+					<p class="basicinfo"><strong>기본정보</strong></p>
+					<p>
+						<input type="text" id="u-name" placeholder="이름" required>
+					</p>
+					<p>
+						<input type="text" id="u-id" placeholder="아이디" required>
+						<input type="text" id="ckb" placeholder="중복확인">
+					</p>
+					<p>
+						<input type="text" id="u-pw" placeholder="비밀번호(9~20자리의 영문 대,소문자,숫자,특수기호)" required>
+					</p>
+					<p>
+						<input type="text" id="u-pwck" placeholder="비밀번호 확인" required>
+					</p>
+					<p>
+						<input type="text" id="u-birth" placeholder="19960206" required>
+					</p>
+					<p>
+						<input type="text" id="u-pn" placeholder="01076165404" required>
+					</p>
+					<p>
+						<input type="text" id="u-email" placeholder="chaerim26@naver.com" required>
+					</p>
+					<p class="joinsubmit">
+						<input type="submit" id="join" value="가입하기">
+						<input type="reset" id="cancel" value="취소하기">
+					</p>
+				</form>
+			</div>
+		</section>
+		<!--content end-->
+
+		<footer id="realfooter">
+			<div class="footer-inner">
+				<div class="footer-top">
+					<ul class="contact">
+						<li><a href="#">탐라는 제주랜드 소개</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">개인정보취급방침</a></li>
+						<li class="m_none"><a href="#">제휴문의</a></li>
+						<li class="m_none"><a href="#">채용안내 및 지원</a></li>
+						<li class="m_none"><a href="#">이메일무단수집거부</a></li>
+					</ul>
+					<ul class="sns">
+						<li><a href="#"><img src="images/facebook.png" alt="페이스북"></a></li>
+						<li><a href="#"><img src="images/instagram.png" alt="인스타그램"></a></li>
+						<li><a href="#"><img src="images/twitter.png" alt="트위터"></a></li>
+						<li><a href="#"><img src="images/utube.png" alt="유튜브"></a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom">
+					<img src="images/logo.PNG" class="footerimg" width="92" height="95" alt="탐라는제주랜드로고">
+					<p>제주특별자치도 제주시 공항로 2 탐라는 제주랜드(주) ㅣ 대표전화 : 054-797-2595</p><br>
+					<p>대표이사 : 엄채림 ㅣ 사업자등록번호 : 123-45-67890 ㅣ 통신판매업 신고번호 : 제2020-제주공항-0206호</p><br>
+					<small class="copy">Copyright ⓒ TAMRAJEJULAND.All rights reserved.</small>
+				</div>
+				<div class="m_footer-bottom">
+					<p>제주특별자치도 제주시 공항로 2 탐라는 제주랜드(주)</p><br>
+					<p>대표전화 : 054-797-2595 ㅣ 사업자등록번호 : 123-45-67890 ㅣ</p><br>
+					<p>대표이사 : 엄채림 ㅣ 통신판매업 신고번호 : 제2020-제주공항-0206호</p><br>
+					<small class="copy">Copyright ⓒ TAMRAJEJULAND.All rights reserved.</small>
+				</div>
+			</div>
+		</footer>
+		<!--footer end-->
+	</body>
+</html>

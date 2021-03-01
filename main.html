@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>탐라는 제주랜드 메인페이지</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/main_master.css">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="js/jquery.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery.mobile.custom.min.js"></script>
+		<script src="js/swipe.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".next").click(function(e){
+					e.preventDefault();
+					$("#rideframe").animate({left:'-1300px'});
+				});
+				$(".prev").click(function(e){
+					e.preventDefault();
+					$("#rideframe").animate({left:'0'});
+				});
+			//(모바일)어트랙션 운휴정보 slide end
+
+				$(".m_next").click(function(e){
+					e.preventDefault();
+					$("#m_rideframe").animate({left:'-300px'});
+				});
+				$(".m_prev").click(function(e){
+					e.preventDefault();
+					$("#m_rideframe").animate({left:'0'});
+				});
+			//(모바일)어트랙션 운휴정보 slide end
+
+				$(".m_nav").click(function(){
+					$(".m_slidemenu").slideToggle();
+					$(".m_nav").hide();
+					$(".m_smart").hide();
+				});
+				$(".right_icon").click(function(){
+					$(".m_slidemenu").slideUp();
+					$(".m_nav").show();
+					$(".m_smart").show();
+				});
+			
+				$(".sub1").click(function(){
+					$(".m_sub1").slideToggle();
+				});
+				$(".sub2").click(function(){
+					$(".m_sub2").slideToggle();
+				});
+				$(".sub3").click(function(){
+					$(".m_sub3").slideToggle();
+				});
+				$(".sub4").click(function(){
+					$(".m_sub4").slideToggle();
+				});
+				$(".sub5").click(function(){
+					$(".m_sub5").slideToggle();
+				});			
+			//(모바일)nav toggle end
+			});
+
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<div class="m_slidemenu">
+				<div class="m_header">
+					<a href="login.html" class="left_icon"><img src="images/m_login.png" width="18" height="18" alt="모바일로그인아이콘"></a>
+					<p class="m_login">로그인</p>
+					<a href="#" class="right_icon"><img src="images/m_close.png" width="18" height="18" alt="모바일닫기아이콘"></a>
+				</div>
+				<ul class="m_loginlist">
+					<li><a href="join.html">회원가입</a></li>
+					<li><a href="#">단체프로그램</a></li>
+					<li><a href="ticketing.html">온라인예매</a></li>
+				</ul>
+					
+				<nav id="m_menu">
+					<ul>
+						<li class="m1 sub1">
+							<a href="#" class="mm">이용정보</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub1">
+								<li class="m_firstsub"><a href="#">이용안내</a></li>
+								<li><a href="#">운영시간</a></li>
+								<li class="m_lastsub"><a href="#">오시는길</a></li>
+							</ul>
+						</li>
+						<li class="m1 sub2">
+							<a href="#" class="mm">요금정보</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub2">
+								<li class="m_firstsub"><a href="#">이용요금</a></li>
+								<li><a href="#">이달의 혜택</a></li>
+								<li class="m_lastsub"><a href="#">제휴카드</a></li>
+							</ul>
+						</li>
+						<li class="m1 sub3">
+							<a href="#" class="mm">즐길거리</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub3">
+								<li class="m_firstsub"><a href="#">추천코스</a></li>
+								<li><a href="attraction.html">어트랙션</a></li>
+								<li class="m_lastsub"><a href="#">레스토랑</a></li>
+							</ul>
+						</li>
+						<li class="m1 sub4">
+							<a href="#" class="mm">이벤트</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub4">
+								<li class="m_firstsub"><a href="#">참여 이벤트</a></li>
+								<li class="m_lastsub"><a href="#">체험 프로그램</a></li>
+							</ul>
+						</li> 
+						<li class="m1 sub5">
+							<a href="#" class="mm">고객센터</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub5">
+								<li class="m_firstsub"><a href="#">공지사항</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">고객 소리함</a></li>
+								<li class="m_lastsub"><a href="#">분실물 센터</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<h1>
+				<a href="#"><img src="images/logo.PNG" alt="탐라는제주랜드 로고"></a>
+			</h1>
+			<a href="#" class="m_nav"><img src="images/m_nav.png" alt="모바일 네비"></a>
+			<a href="ticketing.html" class="m_smart"><img src="images/m_smart.png" alt="모바일 스마트예약"></a>
+			<ul class="login">
+				<li><a href="login.html">로그인</a></li>
+				<li><a href="join.html">회원가입</a></li>
+				<li><a href="#">KOR▼</a></li>
+			</ul>
+			<ul class="sub">
+				<li>
+					<a href="#"><img src="images/search.png" width="21" height="21" alt="검색"></a>
+					<ul>
+						<li>검색</li>
+					</ul>
+				</li>
+				<li>
+					<a href="ticketing.html"><img src="images/ticket.png" height="21" alt="예매"></a>
+					<ul>
+						<li>예매</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><img src="images/people.png" height="21" alt="단체"></a>
+					<ul>
+						<li>단체</li> 
+					</ul>
+				</li>
+			</ul>
+			<nav id="menu">
+				<ul>
+					<li class="m1">
+						<a href="#" class="mm">이용정보</a>
+						<ul>
+							<li><a href="#">이용안내</a></li>
+							<li><a href="#">운영시간</a></li>
+							<li><a href="#">오시는길</a></li>
+						</ul>
+					</li>
+					<li class="m1">
+						<a href="#" class="mm">요금정보</a>
+						<ul>
+							<li><a href="#">이용요금</a></li>
+							<li><a href="#">이달의 혜택</a></li>
+							<li><a href="#">제휴카드</a></li>
+						</ul>
+					</li>
+					<li class="m1">
+						<a href="#" class="mm">즐길거리</a>
+						<ul>
+							<li><a href="#">추천코스</a></li>
+							<li><a href="attraction.html">어트랙션</a></li>
+							<li><a href="#">레스토랑</a></li>
+						</ul>
+					</li>
+					<li class="m1">
+						<a href="#" class="mm">이벤트</a>
+						<ul>
+							<li><a href="#">참여 이벤트</a></li>
+							<li><a href="#">체험 프로그램</a></li>
+						</ul>
+					</li> 
+					<li class="m1">
+						<a href="#"  class="mm">고객센터</a>
+						<ul>
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">고객 소리함</a></li>
+							<li><a href="#">분실물 센터</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!--header end-->
+
+		<section id="mainslide">
+			<img src="images/mainslide.png" alt="메인페이지슬라이드">
+		</section>
+		<!--mainslide end-->
+
+		<section id="content">
+			<div class="information">
+				<p><a href="#">※ 코로나 바이러스-19 관련 이용 안내</a></p>
+			</div>
+			<div class="sale">
+				<h2>나에게 꼭 맞는 <strong>할인 혜택</strong></h2>
+				<ul>
+					<li class="m_list">
+						<span class="subtit">카드할인</span>
+						<ul>
+							<li>
+								<a href="#"><img src="images/card.png" alt="스마트예약할인"></a>
+									<ul>
+										<li>
+											<a href="#">스마트예약</a>
+												<ul>
+													<li class="subtext">21,900원</li>
+												</ul>
+										</li>
+									</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="m_list">
+						<span class="subtit">카드할인</span>
+						<ul>
+							<li>
+								<a href="#"><img src="images/hyundaicard.png" alt="현대M포인트사용우대"></a>
+									<ul>
+										<li>
+											<a href="#">현대M포인트사용우대</a>
+												<ul>
+													<li class="subtext">21,900원</li>
+												</ul>
+										</li>
+									</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="m_list">
+						<span class="subtit">카드할인</span>
+						<ul>
+							<li>
+								<a href="#"><img src="images/asiana.png" alt="아시아나마일리지"></a>
+									<ul>
+										<li>
+											<a href="#">아시아나</a>
+												<ul>
+													<li class="subtext">5,400 마일리지</li>
+												</ul>
+										</li>
+									</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="m_list">
+						<span class="subtit">이달의 할인</span>
+						<ul>
+							<li>
+								<a href="#"><img src="images/student.png" alt="중/고/대학(원)생우대"></a>
+									<ul>
+										<li>
+											<a href="#">중/고/대학(원)생 우대</a>
+												<ul>
+													<li class="subtext">28,500원</li>
+												</ul>
+										</li>
+									</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="box">
+					<div class="cardsale">
+						<p><a href="#">카드할인 자세히 알아보기 →</a></p>
+					</div>
+					<div class="monthsale">
+						<p><a href="#">이달의 할인 자세히 알아보기 →</a></p>
+					</div>
+				</div>
+			</div>
+			<!--sale end-->
+			
+			<div id="m_ride">
+				<h2>어트랙션 <strong>운휴정보</strong></h2>
+				<div id="m_rideframe">
+					<div id="m_ride_content1" class="m_ridecon">
+						<ul>
+							<li>
+								<a href="attraction.html"><img src="images/main_급류타기.png" alt="급류타기"></a>
+									<ul>
+										<li><a href="attraction.html">급류타기</a>
+											<ul>
+												<li class="stop subtext">운휴중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_토네이도.png" alt="토네이도"></a>
+									<ul>
+										<li><a href="attraction.html">토네이도</a>
+											<ul>
+												<li class="subtext">정상운영중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_메가드롭.png" alt="메가드롭"></a>
+									<ul>
+										<li><a href="attraction.html">메가드롭</a>
+											<ul>
+												<li class="subtext">정상운영중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_해저탐험보트.png" alt="해저탐험보트"></a>
+									<ul>
+										<li><a href="attraction.html">해저탐험보트</a>
+											<ul>
+												<li class="stop subtext">운휴중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div id="m_ride_content2" class="m_ridecon">
+						<ul>
+							<li>
+								<a href="attraction.html"><img src="images/main_자이로스윙.png" alt="자이로스윙"></a>
+									<ul>
+										<li><a href="attraction.html">자이로스윙</a>
+											<ul>
+												<li class="subtext">정상운영중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_언더씨킹덤.png" alt="언더씨킹덤"></a>
+									<ul>
+										<li><a href="attraction.html">언더씨킹덤</a>
+											<ul>
+												<li class="stop subtext">운휴중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_범퍼카.png" alt="범퍼카"></a>
+									<ul>
+										<li><a href="attraction.html">범퍼카</a>
+											<ul>
+												<li class="subtext">정상운영중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_vr어드벤처.png" alt="vr어드벤처"></a>
+									<ul>
+										<li><a href="attraction.html">vr어드벤처</a>
+											<ul>
+												<li class="stop subtext">운휴중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--ride end-->
+
+				<div id="m_arrow">
+					<a class="m_prev" href="#" onclick="">
+						<img src="images/btn_prev.gif" alt="이전">
+					</a>
+					<a class="m_next" href="#" onclick="">
+						<img src="images/btn_next.gif" alt="다음">
+					</a>
+				</div>
+				<!--arrow end-->
+
+				<div class="m_box">
+					<p><a href="attraction.html">더 많은 어트랙션 알아보기 →</a></p>
+				</div>
+			</div>
+			<!--rideframe end-->
+			<!--m_ride end-->
+
+			<div id="ride">
+				<h2>어트랙션 <strong>운휴정보</strong></h2>
+				<div id="rideframe">
+					<div id="ride_content1" class="ridecon">
+						<ul>
+							<li>
+								<a href="attraction.html"><img src="images/main_급류타기.png" alt="급류타기"></a>
+									<ul>
+										<li><a href="attraction.html">급류타기</a>
+											<ul>
+												<li class="stop subtext">운휴중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_토네이도.png" alt="토네이도"></a>
+									<ul>
+										<li><a href="attraction.html">토네이도</a>
+											<ul>
+												<li class="subtext">정상운영중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_메가드롭.png" alt="메가드롭"></a>
+									<ul>
+										<li><a href="attraction.html">메가드롭</a>
+											<ul>
+												<li class="subtext">정상운영중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_해저탐험보트.png" alt="해저탐험보트"></a>
+									<ul>
+										<li><a href="attraction.html">해저탐험보트</a>
+											<ul>
+												<li class="stop subtext">운휴중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_바이킹.png" alt="바이킹"></a>
+									<ul>
+										<li><a href="attraction.html">바이킹</a>
+											<ul>
+												<li class="subtext">정상운영중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div id="ride_content2" class="ridecon">
+						<ul>
+							<li>
+								<a href="attraction.html"><img src="images/main_자이로스윙.png" alt="자이로스윙"></a>
+									<ul>
+										<li><a href="attraction.html">자이로스윙</a>
+											<ul>
+												<li class="subtext">정상운영중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_언더씨킹덤.png" alt="언더씨킹덤"></a>
+									<ul>
+										<li><a href="attraction.html">언더씨킹덤</a>
+											<ul>
+												<li class="stop subtext">운휴중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_범퍼카.png" alt="범퍼카"></a>
+									<ul>
+										<li><a href="attraction.html">범퍼카</a>
+											<ul>
+												<li class="subtext">정상운영중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_vr어드벤처.png" alt="vr어드벤처"></a>
+									<ul>
+										<li><a href="attraction.html">vr어드벤처</a>
+											<ul>
+												<li class="stop subtext">운휴중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+							<li>
+								<a href="attraction.html"><img src="images/main_더블락스핀.png" alt="더블락스핀"></a>
+									<ul>
+										<li><a href="attraction.html">더블락스핀</a>
+											<ul>
+												<li class="subtext">정상운영중</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--ride end-->
+
+				<div id="arrow">
+					<a class="prev" href="#" onclick="">
+						<img src="images/btn_prev.gif" alt="이전">
+					</a>
+					<a class="next" href="#" onclick="">
+						<img src="images/btn_next.gif" alt="다음">
+					</a>
+				</div>
+				<!--arrow end-->
+
+				<div class="box">
+					<p><a href="attraction.html">더 많은 어트랙션 알아보기 →</a></p>
+				</div>
+			</div>
+			<!--rideframe end-->
+
+			<div class="special">
+				<h2>좀 더 <strong>특별하게 </strong>즐기고 싶다면?</h2>
+				<ul>
+					<li>
+						<a href="#"><img src="images/photozone.png" alt="포토존"></a>
+							<ul>
+								<li>인생샷 포토존</li>
+							</ul>
+					</li>
+					<li>
+						<a href="#"><img src="images/pkg.png" alt="프리미어pkg"></a>
+							<ul>
+								<li>편리하고 쾌적하게 즐기는
+									<ul>
+										<li class="subtext">프리미어 PKG</li>
+									</ul>
+								</li>
+							</ul>
+					</li>
+					<li>
+						<a href="#"><img src="images/smartline.png" alt="스마트줄서기"></a>
+							<ul>
+								<li>지치고 힘든 기다림 대신
+									<ul>
+										<li class="subtext">스마트 줄서기</li>
+									</ul>
+								</li>
+							</ul>
+					</li>
+					<li>
+						<a href="#"><img src="images/challenge.png" alt="코로나이겨내기챌린지"></a>
+							<ul>
+								<li>의료진 화이팅!
+									<ul>
+										<li class="subtext">코로나 이겨내기 챌린지</li>
+									</ul>
+								</li>
+							</ul>
+					</li>
+				</ul>
+				<div class="box">
+					<p><a href="#">더 많은 꿀팁 보러가기 →</a></p>
+				</div>
+			</div>
+			<!--special end-->
+
+			<div class="review">
+				<h2>탐라는 제주랜드의 <strong>생생한 현장 후기</strong></h2>
+				<ul>
+					<li>
+						<a href="#"><img src="images/winter.png" alt="탐라는제주랜드의겨울"></a>
+							<ul>
+								<li>따뜻하게 즐기는
+									<ul>
+										<li class="subtext">탐라는 제주랜드의 겨울</li>
+									</ul>
+								</li>
+							</ul>
+					</li>
+					<li>
+						<a href="#"><img src="images/realreview.png" alt="리얼후기"></a>
+							<ul>
+								<li>리얼 후기
+									<ul>
+										<li class="subtext">겨울에 롤러코스터 타봤어?</li>
+									</ul>
+								</li>
+							</ul>
+					</li>
+					<li>
+						<a href="#"><img src="images/nimo.png" alt="니모로그"></a>
+							<ul>
+								<li>니모로그
+									<ul>
+										<li class="subtext">니모의 일상</li>
+									</ul>
+								</li>
+							</ul>
+					</li>
+					<li>
+						<a href="#"><img src="images/tamje.png" alt="탐제로그"></a>
+							<ul>
+								<li>탐제로그
+									<ul>
+										<li class="subtext">#제주랜드알바#리액션</li>
+									</ul>
+								</li>
+							</ul>
+					</li>
+					<li class="last">
+						<a href="#"><img src="images/vote.png" alt="인기투표"></a>
+							<ul>
+								<li>1위부터 20위까지
+									<ul>
+										<li class="subtext">탐라는 제주랜드 인기투표</li>
+									</ul>
+								</li>
+							</ul>
+					</li>
+					<li class="last">
+						<a href="#"><img src="images/christmas.png" alt="메리크리스마스"></a>
+							<ul>
+								<li>탐라 메리 크리스마스
+									<ul>
+										<li class="subtext">Winter Festival</li>
+									</ul>
+								</li>
+							</ul>
+					</li>
+					<li class="last">
+						<a href="#"><img src="images/dolphin.png" alt="돌고래밀집지역"></a>
+							<ul>
+								<li>2020 탐라 제주랜드
+									<ul>
+										<li class="subtext">돌고래 밀집 지역</li>
+									</ul>
+								</li>
+							</ul>
+					</li>
+					<li class="last">
+						<a href="#"><img src="images/diver.png" alt="해녀체험"></a>
+							<ul>
+								<li>제주 해녀들과 함께하는
+									<ul>
+										<li class="subtext">해녀 체험</li>
+									</ul>
+								</li>
+							</ul>
+					</li>
+				</ul>
+				<div class="box">
+					<p><a href="#">더 많은 후기 보러가기 →</a></p>
+				</div>
+			</div>
+			<!--review end-->
+		</section>
+		<!--content end-->
+
+		<footer id="realfooter">
+			<div class="footer-inner">
+				<div class="footer-top">
+					<ul class="contact">
+						<li><a href="#">탐라는 제주랜드 소개</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">개인정보취급방침</a></li>
+						<li class="m_none"><a href="#">제휴문의</a></li>
+						<li class="m_none"><a href="#">채용안내 및 지원</a></li>
+						<li class="m_none"><a href="#">이메일무단수집거부</a></li>
+					</ul>
+					<ul class="sns">
+						<li><a href="#"><img src="images/facebook.png" alt="페이스북"></a></li>
+						<li><a href="#"><img src="images/instagram.png" alt="인스타그램"></a></li>
+						<li><a href="#"><img src="images/twitter.png" alt="트위터"></a></li>
+						<li><a href="#"><img src="images/utube.png" alt="유튜브"></a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom">
+					<img src="images/logo.PNG" class="footerimg" width="92" height="95" alt="탐라는제주랜드로고">
+					<p>제주특별자치도 제주시 공항로 2 탐라는 제주랜드(주) ㅣ 대표전화 : 054-797-2595</p><br>
+					<p>대표이사 : 엄채림 ㅣ 사업자등록번호 : 123-45-67890 ㅣ 통신판매업 신고번호 : 제2020-제주공항-0206호</p><br>
+					<small class="copy">Copyright ⓒ TAMRAJEJULAND.All rights reserved.</small>
+				</div>
+				<div class="m_footer-bottom">
+					<p>제주특별자치도 제주시 공항로 2 탐라는 제주랜드(주)</p><br>
+					<p>대표전화 : 054-797-2595 ㅣ 사업자등록번호 : 123-45-67890 ㅣ</p><br>
+					<p>대표이사 : 엄채림 ㅣ 통신판매업 신고번호 : 제2020-제주공항-0206호</p><br>
+					<small class="copy">Copyright ⓒ TAMRAJEJULAND.All rights reserved.</small>
+				</div>
+			</div>
+		</footer>
+		<!--footer end-->
+	</body>
+</html>

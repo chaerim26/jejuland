@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>탐라는 제주랜드 예매페이지</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/ticketing_master.css">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="js/jquery.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery.mobile.custom.min.js"></script>
+		<script src="js/swipe.js"></script>
+		<script>
+			$(document).ready(function(){
+				//tab1
+				$(".t1").addClass("active").show();
+				$(".t1").click(function(e){
+					e.preventDefault();//초기화
+					$(".t1").removeClass("active");
+					$(this).addClass("active");
+					$(".item1").show();
+					$(".item2").hide();
+					$(".item3").hide();
+					var activeTab=$(this).find("a").attr("href");
+					$(activeTab).fadeIn();
+				});
+				
+				//tab2
+				$(".t2").addClass("active2").show();
+				$(".t2").click(function(e){
+					e.preventDefault();//초기화
+					$(".t2").removeClass("active2");
+					$(this).addClass("active2");
+					$(".item2").show();
+					$(".item1").hide();
+					$(".item3").hide();
+					var activeTab=$(this).find("a").attr("href");
+					$(activeTab).fadeIn();
+				});
+				
+				//tab3
+				$(".t3").addClass("active3").show();
+				$(".t3").click(function(e){
+					e.preventDefault();//초기화
+					$(".t3").removeClass("active3");
+					$(this).addClass("active3");
+					$(".item3").show();
+					$(".item1").hide();
+					$(".item2").hide();
+					var activeTab=$(this).find("a").attr("href");
+					$(activeTab).fadeIn();
+				});
+				//tab end
+
+				$(".m_nav").click(function(){
+					$(".m_slidemenu").slideToggle();
+					$(".m_nav").hide();
+					$(".m_home").hide();
+				});
+				$(".right_icon").click(function(){
+					$(".m_slidemenu").slideUp();
+					$(".m_nav").show();
+					$(".m_home").show();
+				});
+
+				$(".sub1").click(function(){
+					$(".m_sub1").slideToggle();
+				});
+				$(".sub2").click(function(){
+					$(".m_sub2").slideToggle();
+				});
+				$(".sub3").click(function(){
+					$(".m_sub3").slideToggle();
+				});
+				$(".sub4").click(function(){
+					$(".m_sub4").slideToggle();
+				});
+				$(".sub5").click(function(){
+					$(".m_sub5").slideToggle();
+				});
+				//(모바일)nav slidetoggle end
+
+				$(".m_info1").click(function(){
+					$(".m_sublist1").slideToggle();
+				});
+				$(".m_info2").click(function(){
+					$(".m_sublist2").slideToggle();
+				});
+				$(".m_info3").click(function(){
+					$(".m_sublist3").slideToggle();
+				});
+				//(모바일)info slidetoggle end
+			});
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<div class="m_slidemenu">
+				<div class="m_header">
+					<a href="login.html" class="left_icon"><img src="images/m_login.png" width="18" height="18" alt="모바일로그인아이콘"></a>
+					<p class="m_login">로그인</p>
+					<a href="#" class="right_icon"><img src="images/m_close.png" width="18" height="18" alt="모바일닫기아이콘"></a>
+				</div>
+				<ul class="m_loginlist">
+					<li><a href="join.html">회원가입</a></li>
+					<li><a href="#">단체프로그램</a></li>
+					<li><a href="ticketing.html">온라인예매</a></li>
+				</ul>
+					
+				<nav id="m_menu">
+					<ul>
+						<li class="m1 sub1">
+							<a href="#" class="mm">이용정보</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub1">
+								<li class="m_firstsub"><a href="#">이용안내</a></li>
+								<li><a href="#">운영시간</a></li>
+								<li class="m_lastsub"><a href="#">오시는길</a></li>
+							</ul>
+						</li>
+						<li class="m1 sub2">
+							<a href="#" class="mm">요금정보</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub2">
+								<li class="m_firstsub"><a href="#">이용요금</a></li>
+								<li><a href="#">이달의 혜택</a></li>
+								<li class="m_lastsub"><a href="#">제휴카드</a></li>
+							</ul>
+						</li>
+						<li class="m1 sub3">
+							<a href="#" class="mm">즐길거리</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub3">
+								<li class="m_firstsub"><a href="#">추천코스</a></li>
+								<li><a href="attraction.html">어트랙션</a></li>
+								<li class="m_lastsub"><a href="#">레스토랑</a></li>
+							</ul>
+						</li>
+						<li class="m1 sub4">
+							<a href="#" class="mm">이벤트</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub4">
+								<li class="m_firstsub"><a href="#">참여 이벤트</a></li>
+								<li class="m_lastsub"><a href="#">체험 프로그램</a></li>
+							</ul>
+						</li> 
+						<li class="m1 sub5">
+							<a href="#"  class="mm">고객센터</a>
+							<a href="#" class="more">+</a>
+							<ul class="m_sub5">
+								<li class="m_firstsub"><a href="#">공지사항</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">고객 소리함</a></li>
+								<li class="m_lastsub"><a href="#">분실물 센터</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<h1 class="ticketing">스마트 예약</h1>
+			<a href="main.html" class="homeicon"><img src="images/home.png" alt="홈아이콘"></a>
+			<ul class="sub">
+				<li><a href="login.html">로그인</a></li>
+				<li><a href="#">예매내역</a></li>
+			</ul>
+			<a href="#" class="m_nav"><img src="images/m_nav.png" alt="모바일 네비"></a>
+			<a href="main.html" class="m_home"><img src="images/m_home.png" alt="모바일 홈"></a>
+		</header>
+		<!--header end-->
+
+		<section id="content">
+			<div id="ticketingimage"><img src="images/ticketingimage.png" alt="토네이도이미지"></div>
+			<div id="left-cb">
+				<img src="images/ticketingimage.png" alt="토네이도이미지">
+				<h3>이용권(제휴카드 할인)</h3>
+				<p>
+					제휴카드가 있다면 지금 할인받고 게이트로 바로 입장하세요.<br>
+					(10/1~12/31)<br>
+					<br>- 본인 제휴 이용가격 : 21,000원<br>
+					- 동반인 제휴 이용가격 : 30,000원 (최대 3인)<br>
+					<br>- 삼성 빅앤빅카드 : 본인 43,000원 결제시 동반 1인 무료<br>
+					- 현대카드 M포인트 : 본인 21,000원 결제 + M포인트 28,000P 차감<br>
+					* 추가동반인 우대 미지원<br>
+					<br>※ 할인은 제휴카드 실적 충족 시 가능합니다.<br>
+					(실적 충족 여부는 카드사로 문의)<br>
+				</p>
+				<p class="important_text">※ 코로나19 대응을 위해 입장정보를 수집하고 있습니다.<br>
+				입장 전 반드시 탐라는 제주랜드 APP에 이용권을 등록해주세요 (구매 후 바로등록 가능)</p>
+			</div>
+			<div id="right-cb">
+				<table width="480" height="1050">
+						<tr>
+							<td colspan=2 class="optiontext underli">예약옵션</td>
+						</tr>
+						<tr>
+							<td colspan=2 class="underli">방문예정일 <a href="#" class="right_text">2020.12.25</a></td>
+						</tr>
+						<tr>
+							<td colspan=2 class="underli">구분 <a href="#" class="right_text">주간권(종일권)</a></td>
+						</tr>
+						<tr>
+							<td colspan=2 class="underli">제휴사 <a href="#" class="right_text">하나(구,외환)</a></td>
+						</tr>
+						<tr>
+							<td colspan=2 align=center class="inner underli">
+								<table class="inner_table" width="375" height="180">
+									<tr>
+										<td><a href="#">현대카드</a></td>
+										<td><a href="#">신한카드</a></td>
+										<td><a href="#">BC카드</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">KB국민카드</a></td>
+										<td><a href="#">삼성카드</a></td>
+										<td class="select"><a href="#">하나(구,외환)</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">하나(구,SK)</a></td>
+										<td><a href="#">NH농협카드</a></td>
+										<td><a href="#">씨티카드</a></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td colspan=2 class="underli">제휴카드 <a href="#" class="right_text">하나(구,외환)카드</a></td>
+						</tr>
+						<tr>
+							<td colspan=2 class="underli">상품선택 <a href="#" class="right_text">21,000원</a></td>
+						</tr>
+						<tr>
+							<td colspan=2 class="underli">추가동반인 <a href="#" class="right_text">선택안 함</a></td>
+						</tr>
+						<tr>
+							<td colspan=2 class="lastline">총 금액 <a href="#" class="right_text">21,000원</a></td>
+						</tr>
+				</table>
+				<table class="bottom_table" width="480" height="75">
+					<tr>
+						<td class="keep"><a href="#">장바구니</a></td>
+						<td class="now"><a href="#">바로예약</a></td>
+					</tr>
+				</table>
+			</div>
+			<div id="m_bottom-cb">
+				<div class="m_infolist m_info1">
+					<a class="m_infoleft">안내 및 주의사항</a>
+					<a class="m_inforight">▼</a>
+				</div>
+					<div class="ms m_sublist1">
+						<p>
+							방문예정일 기준 30일 전부터 당일까지 예약 가능합니다.(다음 달 예약은 당월 20일 경 오픈 예정이며, 일정은 변동될 수 있습니다.)<br>
+							예약 완료 후에는 날짜/인원/결제수단 등 예약사항의 변경은 불가합니다.<br>
+							변경을 원하시면 예약 취소 후 재예약 하셔야 하며, 예약 취소 후 제휴카드 실적 복구는 영업일<br>
+							기준 최대 7일이 소요될 수 있으니, 방문예정일, 예약 인원 등을 다시 한 번 확인해 주세요.<br>
+							<br>※ 방문예정일 당일에는 예약 취소가 불가합니다.(방문예정일 전날까지만 취소 가능)<br>
+							※ 제휴카드 할인은 카드사에서 조건 충족시 제공하는 혜택으로 제휴 실적 충족 여부는 카드사로 문의하셔야 확인 가능합니다.<br>
+							<br>[제휴카드 이용 안내]<br>
+							제휴카드 결제 시 대인요금 기준에서 적용됩니다.<br>
+							카드 명의자 본인 결제에 한하며, 해당카드로 결제하는 경우에만 적용됩니다.<br>
+							카드 별 이용조건 충족 시 적용되며, 자세한 사항은 해당 카드사로 문의하시기 바랍니다.<br>
+							카드사 및 카드종류에 따라 온라인 예매 불가 및 우대 가능(이용 실적 충족) 여부 확인이 불가할 수도 있습니다.<br>
+							동반인이 있는 경우 동반할인은 최대 3인까지 가능하며, 본인결제와 동반인 결제를 각각 결제하셔야 합니다.(총 2회 결제, 예약 QR코드는 1개)<br>
+							※ 현대 M포인트 차감 결제는 추가동반인 결제를 지원하지 않고, 보유 포인트 범위 내 중복 사용 및 추가 결제 가능합니다.<br>
+							동반인을 선택한 후 제휴카드 본인 결제만 완료하고 동반인 결제를 하지 않으면 예약 미완료로서 입장할 수 없습니다.<br>
+							청소년/소인은 입장 시 학생증 및 신분증을 제시해 주셔야 하며, 미지참시 입장이 제한될 수 있습니다.(청소년 : 만 13~18세 / 소인 : 36개월~만 12세 / 경로 : 만 65세~)<br>
+							청구할인카드는 제주랜드 현장 매표소 결제 시에만 적용되며 청구할인은 해당 카드사 정책에 의거합니다.<br>
+							<br>[예약문자 안내]<br>
+							예약문자를 받지 못한 경우, 모바일 홈페이지 > 마이페이지 > 예매조회 의 상세보기를 조회하면, QR코드와 이용안내/유의사항을 확인할 수 있습니다.
+						</p>
+					</div>
+				<div class="m_infolist m_info2">
+					<a class="m_infoleft">취소 및 환불</a>
+					<a class="m_inforight">▼</a>
+				</div>
+					<div class="ms m_sublist2">
+						<p>
+							방문예정일 및 인원을 변경하려면 예약 취소 후 재예약하여 주십시오.(변경 및 부분취소 불가)<br>
+							방문예정일 전날까지 결제취소 가능하며, 미이용시 방문예정일 다음날 자동 취소됩니다.(위약금없음)<br>
+							예약취소 후 제휴카드 실적 복구에 영업일 기준 최대 7일이 소요될 수 있습니다.
+						</p>
+					</div>
+				<div class="m_infolist m_info3">
+					<a class="m_infoleft">상품 세부 표시</a>
+					<a class="m_inforight">▼</a>
+				</div>
+					<div class="ms m_sublist3">
+						<p>
+							전자상거래 상품정보제공 고시<br>
+							<br>[이용권 발행자]<br>
+							탐라는 제주랜드(주)<br>
+							<br>[유효기간 및 이용조건]<br>
+							방문 예정일에만 사용 가능하며 예약 완료 후에는 날짜/인원/결제수단 등 예약사항 변경 불가<br>
+							<br>홈페이지를 통하여 취소수수료 없이 결제취소 가능 (방문예정일이 지난 경우 익일자동 취소됨)<br>
+							단, 계좌이체/체크카드로 구매 시,금융사별 정산시간에 따라 23:30 ~ 01:00 사이에는 예약 및 취소가 불가할 수 있습니다.<br>
+							<br>* KB국민은행 23:30~00:30 (단, 22:00~00:30에는 취소만 불가)<br>
+							* NH농협은행 23:30~00:30 (월 23:30~04:00)<br>
+							* 우체국 23:40~00:30,04:00~05:00<br>
+							* 씨티은행 23:30~08:00<br>
+							* 경남은행 23:00~08:00<br>
+							* 광주은행 24:00~05:00 (예약 및 취소 불가)<br>
+							* SC제일은행 주중 구매건은 주말 취소 불가. 주말 구매건 주중 취소 불가
+						</p>
+					</div>
+				</div>
+			<div id="bottom-cb">
+				<section>
+					<h3 class="tit t1">
+						<a href="#" onclick="">안내 및 주의사항</a>
+					</h3>
+					<div class="items item1">
+						<p>
+							방문예정일 기준 30일 전부터 당일까지 예약 가능합니다.(다음 달 예약은 당월 20일 경 오픈 예정이며, 일정은 변동될 수 있습니다.)<br>
+							예약 완료 후에는 날짜/인원/결제수단 등 예약사항의 변경은 불가합니다.<br>
+							변경을 원하시면 예약 취소 후 재예약 하셔야 하며, 예약 취소 후 제휴카드 실적 복구는 영업일<br>
+							기준 최대 7일이 소요될 수 있으니, 방문예정일, 예약 인원 등을 다시 한 번 확인해 주세요.<br>
+							※ 방문예정일 당일에는 예약 취소가 불가합니다.(방문예정일 전날까지만 취소 가능)<br>
+							※ 제휴카드 할인은 카드사에서 조건 충족시 제공하는 혜택으로 제휴 실적 충족 여부는 카드사로 문의하셔야 확인 가능합니다.<br>
+							<br>[제휴카드 이용 안내]<br>
+							제휴카드 결제 시 대인요금 기준에서 적용됩니다.<br>
+							카드 명의자 본인 결제에 한하며, 해당카드로 결제하는 경우에만 적용됩니다.<br>
+							카드 별 이용조건 충족 시 적용되며, 자세한 사항은 해당 카드사로 문의하시기 바랍니다.<br>
+							카드사 및 카드종류에 따라 온라인 예매 불가 및 우대 가능(이용 실적 충족) 여부 확인이 불가할 수도 있습니다.<br>
+							동반인이 있는 경우 동반할인은 최대 3인까지 가능하며, 본인결제와 동반인 결제를 각각 결제하셔야 합니다.(총 2회 결제, 예약 QR코드는 1개)<br>
+							※ 현대 M포인트 차감 결제는 추가동반인 결제를 지원하지 않고, 보유 포인트 범위 내 중복 사용 및 추가 결제 가능합니다.<br>
+							동반인을 선택한 후 제휴카드 본인 결제만 완료하고 동반인 결제를 하지 않으면 예약 미완료로서 입장할 수 없습니다.<br>
+							청소년/소인은 입장 시 학생증 및 신분증을 제시해 주셔야 하며, 미지참시 입장이 제한될 수 있습니다.(청소년 : 만 13~18세 / 소인 : 36개월~만 12세 / 경로 : 만 65세~)<br>
+							청구할인카드는 제주랜드 현장 매표소 결제 시에만 적용되며 청구할인은 해당 카드사 정책에 의거합니다.<br>
+							<br>[예약문자 안내]<br>
+							예약문자를 받지 못한 경우, 모바일 홈페이지 > 마이페이지 > 예매조회 의 상세보기를 조회하면, QR코드와 이용안내/유의사항을 확인할 수 있습니다.
+						</p>
+					</div>
+
+					<h3 class="tit t2">
+						<a href="#" onclick="">취소 및 환불</a>
+					</h3>
+					<div class="items item2">
+						<p>
+							방문예정일 및 인원을 변경하려면 예약 취소 후 재예약하여 주십시오.(변경 및 부분취소 불가)<br>
+							방문예정일 전날까지 결제취소 가능하며, 미이용시 방문예정일 다음날 자동 취소됩니다.(위약금없음)<br>
+							예약취소 후 제휴카드 실적 복구에 영업일 기준 최대 7일이 소요될 수 있습니다.
+						</p>
+					</div>
+
+					<h3 class="tit t3">
+						<a href="#" onclick="">상품 세부 표시</a>
+					</h3>
+					<div class="items item3">
+						<p>
+							전자상거래 상품정보제공 고시<br>
+							<br>[이용권 발행자]<br>
+							탐라는 제주랜드(주)<br>
+							<br>[유효기간 및 이용조건]<br>
+							방문 예정일에만 사용 가능하며 예약 완료 후에는 날짜/인원/결제수단 등 예약사항 변경 불가<br>
+							<br>홈페이지를 통하여 취소수수료 없이 결제취소 가능 (방문예정일이 지난 경우 익일자동 취소됨)<br>
+							단, 계좌이체/체크카드로 구매 시,금융사별 정산시간에 따라 23:30 ~ 01:00 사이에는 예약 및 취소가 불가할 수 있습니다.<br>
+							<br>* KB국민은행 23:30~00:30 (단, 22:00~00:30에는 취소만 불가)<br>
+							* NH농협은행 23:30~00:30 (월 23:30~04:00)<br>
+							* 우체국 23:40~00:30,04:00~05:00<br>
+							* 씨티은행 23:30~08:00<br>
+							* 경남은행 23:00~08:00<br>
+							* 광주은행 24:00~05:00 (예약 및 취소 불가)<br>
+							* SC제일은행 주중 구매건은 주말 취소 불가. 주말 구매건 주중 취소 불가
+						</p>
+					</div>
+				</section>
+			</div>
+		</section>
+		
+		<footer id="realfooter">
+			<div class="footer-inner">
+				<div class="footer-top">
+					<ul class="contact">
+						<li><a href="#">탐라는 제주랜드 소개</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">개인정보취급방침</a></li>
+						<li class="m_none"><a href="#">제휴문의</a></li>
+						<li class="m_none"><a href="#">채용안내 및 지원</a></li>
+						<li class="m_none"><a href="#">이메일무단수집거부</a></li>
+					</ul>
+					<ul class="sns">
+						<li><a href="#"><img src="images/facebook.png" alt="페이스북"></a></li>
+						<li><a href="#"><img src="images/instagram.png" alt="인스타그램"></a></li>
+						<li><a href="#"><img src="images/twitter.png" alt="트위터"></a></li>
+						<li><a href="#"><img src="images/utube.png" alt="유튜브"></a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom">
+					<img src="images/logo.PNG" class="footerimg" width="92" height="95" alt="탐라는제주랜드로고">
+					<p>제주특별자치도 제주시 공항로 2 탐라는 제주랜드(주) ㅣ 대표전화 : 054-797-2595</p><br>
+					<p>대표이사 : 엄채림 ㅣ 사업자등록번호 : 123-45-67890 ㅣ 통신판매업 신고번호 : 제2020-제주공항-0206호</p><br>
+					<small class="copy">Copyright ⓒ TAMRAJEJULAND.All rights reserved.</small>
+				</div>
+				<div class="m_footer-bottom">
+					<p>제주특별자치도 제주시 공항로 2 탐라는 제주랜드(주)</p><br>
+					<p>대표전화 : 054-797-2595 ㅣ 사업자등록번호 : 123-45-67890 ㅣ</p><br>
+					<p>대표이사 : 엄채림 ㅣ 통신판매업 신고번호 : 제2020-제주공항-0206호</p><br>
+					<small class="copy">Copyright ⓒ TAMRAJEJULAND.All rights reserved.</small>
+				</div>
+			</div>
+		</footer>
+		<!--footer end-->
+		<div class="m_ticketing">
+			<a href="#">
+			<p>예약하기</p>
+			</a>	
+		</div>
+		<!--m_ticketing end-->
+	</body>
+</html>
